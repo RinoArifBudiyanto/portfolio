@@ -15,7 +15,7 @@ const project = () => {
         variants={variants}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >
-        <div>
+        <div id="project">
           <h1 className="font-bold text-2xl text-center p-5">My Projects</h1>
           <p className="font-light text-gray-600 text-center">
             This page is the result of my project

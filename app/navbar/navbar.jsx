@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white shadow-mdcl">
+    <nav className="bg-blue-600 text-white shadow-mdcl sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between text-xl">
         <div className="font-bold">
           <h1 className=" font-bold text-2xl">R<span className="text-cyan-400">AB</span></h1>

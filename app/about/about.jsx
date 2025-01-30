@@ -16,7 +16,7 @@ const About = () => {
         variants={variants}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }} // Durasi lebih panjang untuk animasi yang lebih halus
       >
-        <div className="px-16 py-4 bg-slate-100  text-xl">
+        <div className="px-16 py-4 bg-slate-100  text-xl" id="about">
           <div className="text-center font-bold">
             <h1 className="text-2xl">About Me</h1>
           </div>

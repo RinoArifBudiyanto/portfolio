@@ -17,7 +17,7 @@ const service = () => {
         variants={variants}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >
-        <div>
+        <div id="service">
           <h1 className="text-center font-bold text-2xl p-5">My Service</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-slate-200 rounded p-2">
