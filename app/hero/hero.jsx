@@ -24,7 +24,7 @@ const Hero = () => {
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >
         <div className="flex flex-col-reverse md:flex-row px-16 justify-between py-10 items-center">
-          <div className="mt-4 md:py-3 lg:text-2xl text-xl">
+          <div className="mt-4 md:py-3 lg:text-2xl text-2">
             <h1 className="font-semibold">
               Hello! my name is Rino{" "}
               <span className="text-cyan-500">Arif Budiyanto</span>

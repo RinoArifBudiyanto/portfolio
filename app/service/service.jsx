@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { faCode, faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faPalette, faGear } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const service = () => {
   const variants = {
@@ -19,7 +19,7 @@ const service = () => {
       >
         <div>
           <h1 className="text-center font-bold text-2xl p-5">My Service</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-slate-200 rounded p-2">
               <h2 className="text-center font-bold text-xl">
                 Front End Development
@@ -39,6 +39,19 @@ const service = () => {
                 landing pages, personal websites and wireframes.
               </p>
               <p className="font-bold pt-3">Tools : Figma</p>
+            </div>
+            <div className=" bg-slate-200 p-2 h-48">
+              <h2 className="text-center font-bold text-xl">
+                Quality Accurance Manual
+              </h2>
+              <FontAwesomeIcon icon={faGear} className="size-10 pl-4" />
+              <p className="pt-2">
+                Carry out testing manually using Excel and spreadsheet tools and
+                carry out bug reports
+              </p>
+              <p className="font-bold pt-3">
+                Tools : Excel, Spreadsheet, postman
+              </p>
             </div>
           </div>
         </div>
