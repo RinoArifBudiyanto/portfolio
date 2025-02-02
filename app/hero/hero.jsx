@@ -6,6 +6,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { useScroll } from "motion/react";
 
 const Hero = () => {
   const variants = {
@@ -23,43 +24,76 @@ const Hero = () => {
         variants={variants}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >
-        <div className="flex flex-col-reverse md:flex-row px-16 justify-between py-10 items-center" id="home">
-          <div className="mt-4 md:py-3 lg:text-2xl text-2">
-            <h1 className="font-semibold">
-              Hello! my name is Rino{" "}
+        <div
+          className="flex flex-col-reverse md:flex-row px-4 md:px-16 justify-between py-10 items-center"
+          id="home"
+        >
+          {/* Bagian Teks */}
+          <div className="mt-4 md:mt-0 md:py-3 text-center md:text-left">
+            <h1 className="font-semibold text-2xl lg:text-3xl">
+              Hello world, i'm Rino{" "}
               <span className="text-cyan-500">Arif Budiyanto</span>
             </h1>
-            <h2 className="font-bold">Front End Developer</h2>
-            <p>
-              If you're interested in becoming a Frontend Developer,let's start
+            <h2 className="font-bold text-xl lg:text-2xl mt-2">
+              Front End Developer
+            </h2>
+            <p className="font-bold text-lg lg:text-xl mt-2">
+              Welcome to My{" "}
+              <span className="text-cyan-400">personal website 🙌</span>
+            </p>
+            <p className="text-gray-400 pt-2 text-sm lg:text-base">
+              If you're interested in becoming a Frontend Developer, let's start
               learning <br />
               HTML, CSS, JavaScript, along with their frameworks. Keep up the
               spirit!
             </p>
             <a
               href="CvRino.pdf"
-              className="bg-cyan-400 p-3 rounded-full mt-4 inline-block text-center text-white"
+              target="_blank"
+              className="bg-cyan-400 p-3 rounded-full mt-4 inline-block text-center text-white hover:bg-cyan-500 transition duration-300"
             >
               Download CV
             </a>
-            <div className="mt-4 space-x-5">
+            <div className="mt-4 space-x-5 flex justify-center md:justify-start">
               <a
                 href="https://www.linkedin.com/in/rinoarifbudiyanto/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="2x"
+                  color="blue"
+                  className="hover:text-cyan-200 transition duration-300"
+                />
               </a>
-              <a href="https://github.com/RinoArifBudiyanto">
-                <FontAwesomeIcon icon={faGithub} size="2x" />
+              <a
+                href="https://github.com/RinoArifBudiyanto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="2x"
+                  className="hover:text-cyan-200 transition duration-300"
+                />
               </a>
-              <a href="">
-                <FontAwesomeIcon icon={faInstagram} size="2x" color="red" />
+              <a href="#">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="2x"
+                  className="hover:text-cyan-200 transition duration-300"
+                />
               </a>
             </div>
           </div>
-          <div className="w-64 shadow-lg rounded-2xl ">
-            <img src="hero.jpg" alt="" className="rounded-2xl" />
+          {/* Bagian Gambar */}
+          <div className="rounded-3xl bg-gray-100 w-full max-w-[200px] md:max-w-[250px] lg:max-w-[300px] mt-8 md:mt-0 overflow-hidden  hover:shadow-xl transition-shadow duration-300">
+            <img
+              src="hero.jpg"
+              alt="hero1"
+              className="w-full h-auto object-cover rounded-3xl"
+            />
           </div>
         </div>
       </motion.div>

@@ -35,7 +35,7 @@ const Sertifikat = () => {
   return (
     <div className="max-w-5xl mx-auto p-5">
       <h1 className="font-bold text-2xl text-center">My Certificate</h1>
-      <p className="font-light text-gray-600 text-center">
+      <p className="font-light text-gray-400 text-center">
         These are my certificates and achievements.
       </p>
 

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import { motion, useScroll } from "motion/react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,10 +12,12 @@ const Navbar = () => {
     <nav className="bg-blue-600 text-white shadow-mdcl sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between text-xl">
         <div className="font-bold">
-          <h1 className=" font-bold text-2xl">R<span className="text-cyan-400">AB</span></h1>
+          <h1 className=" font-bold text-2xl">
+            R<span className="text-cyan-400">AB</span>
+          </h1>
         </div>
         <ul className="hidden md:flex space-x-6">
-          <li className="font-semibold hover:text-cyan-500">
+          <li className="font-semibold hover:text-cyan-500 ">
             <a href="#home">Home</a>
           </li>
           <li className="font-semibold hover:text-cyan-500">
@@ -59,8 +61,11 @@ const Navbar = () => {
           <a href="#about" className="block px-4 py-2 hover:bg-blue-700">
             About
           </a>
-          <a href="#services" className="block px-4 py-2 hover:bg-blue-700">
-            Services
+          <a href="#service" className="block px-4 py-2 hover:bg-blue-700">
+            Service
+          </a>
+          <a href="#project" className="block px-4 py-2 hover:bg-blue-700">
+            Project
           </a>
           <a href="#contact" className="block px-4 py-2 hover:bg-blue-700">
             Contact
