@@ -6,7 +6,6 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { useScroll } from "motion/react";
 
 const Hero = () => {
   const variants = {
@@ -39,7 +38,7 @@ const Hero = () => {
             </h2>
             <p className="font-bold text-lg lg:text-xl mt-2">
               Welcome to My{" "}
-              <span className="text-cyan-400">personal website 🙌</span>
+              <span className="text-cyan-500">personal website 🙌</span>
             </p>
             <p className="text-gray-400 pt-2 text-sm lg:text-base">
               If you're interested in becoming a Frontend Developer, let's start
@@ -50,7 +49,7 @@ const Hero = () => {
             <a
               href="CvRino.pdf"
               target="_blank"
-              className="bg-cyan-400 p-3 rounded-full mt-4 inline-block text-center text-white hover:bg-cyan-500 transition duration-300"
+              className="bg-cyan-500 p-3 rounded-full mt-4 inline-block text-center text-white hover:bg-cyan-400 transition duration-300"
             >
               Download CV
             </a>
@@ -88,7 +87,7 @@ const Hero = () => {
             </div>
           </div>
           {/* Bagian Gambar */}
-          <div className="rounded-3xl bg-gray-100 w-full max-w-[200px] md:max-w-[250px] lg:max-w-[300px] mt-8 md:mt-0 overflow-hidden  hover:shadow-xl transition-shadow duration-300">
+          <div className="rounded-3xl bg-gray-100 w-full max-w-[200px] md:max-w-[250px] lg:max-w-[300px] mt-8 md:mt-0 ">
             <img
               src="hero.jpg"
               alt="hero1"

@@ -13,7 +13,7 @@ const About = () => {
       whileInView="visible"
       viewport={{ amount: 0.2 }}
     >
-      <motion.div
+      <motion.div 
         variants={variants}
         transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
       >

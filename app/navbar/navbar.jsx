@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion, useScroll } from "motion/react";
+import { useScroll } from "motion/react"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
