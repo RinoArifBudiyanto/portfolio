@@ -1,7 +1,8 @@
 import React from "react";
-import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const contact = () => {
   return (
     <div className="footer bg-blue-500  shadow mt-20 text-white " id="contact">
@@ -17,9 +18,13 @@ const contact = () => {
           </p>
         </div>
         <div className="social-footer flex items-center sm:gap-7 gap-2 text-2xl">
-          <a href="https://twitter.com/RinoArifBudiyanto">
+          <a
+            href="https://www.linkedin.com/in/rinoarifbudiyanto/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
-              icon={faTelegram}
+              icon={faLinkedin}
               className="hover:text-cyan-400"
             />
           </a>
