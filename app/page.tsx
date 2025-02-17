@@ -8,7 +8,6 @@ import Service from "./service/service";
 import Project from "./project/project";
 import Sertifikat from "./sertifikat/sertifikat";
 import Footer from "./footer/footer";
-
 // import Certificates from "../public/data/certificates.json";
 
 export default function Home() {
