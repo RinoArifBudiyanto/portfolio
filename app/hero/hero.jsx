@@ -47,7 +47,7 @@ const Hero = () => {
               spirit!
             </p>
             <a
-              href="CVRino.pdf"
+              href="CV - Rino Arif Budiyanto.pdf"
               target="_blank"
               className="bg-cyan-500 p-3 rounded-full mt-4 inline-block text-center text-white hover:bg-cyan-400 transition duration-300"
             >
